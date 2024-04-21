@@ -1,12 +1,8 @@
 package com.alec.spring.rest.rest_api.Controller;
-
 import com.alec.spring.rest.rest_api.exception.TaskNotFoundException;
 import com.alec.spring.rest.rest_api.model.Status;
 import com.alec.spring.rest.rest_api.model.StatusCheck;
 import com.alec.spring.rest.rest_api.model.Task;
-
-
-
 import com.alec.spring.rest.rest_api.repository.IReadSaveFile;
 import com.alec.spring.rest.rest_api.service.Actions;
 import com.alec.spring.rest.rest_api.service.ActionsMap;
@@ -15,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.util.Map;

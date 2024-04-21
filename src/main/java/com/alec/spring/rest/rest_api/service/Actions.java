@@ -46,10 +46,8 @@ public class Actions implements IActions {
     }
 
 
-
-
     protected Map<Long, Task> getUpdatedTaskMap(IReadSaveFile readSaveFile) {
-        taskMap =readSaveFile.readFile();
+        taskMap = readSaveFile.readFile();
         return taskMap;
     }
 
@@ -65,10 +63,12 @@ public class Actions implements IActions {
                 }
             }
             return sortedByStatus;
-        } getUpdatedTaskMap(readSaveFile);
-    return  taskMap;
+        }
+        getUpdatedTaskMap(readSaveFile);
+        return taskMap;
 
     }
+
     public void setToDoMap(Task task) throws ParserConfigurationException, TransformerException {
         if (captionCheck(task) == -1L) {
             taskMap.put(UniqueId.getId(taskMap), task);

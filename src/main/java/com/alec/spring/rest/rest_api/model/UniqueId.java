@@ -1,5 +1,4 @@
 package com.alec.spring.rest.rest_api.model;
-
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
